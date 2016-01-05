@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhB-SE-eeA">
+                                <rect key="frame" x="270" y="380" width="60" height="30"/>
+                                <state key="normal" title="退出游戏"/>
+                                <connections>
+                                    <action selector="exitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzm-06-N0u"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbq-hN-hYJ">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <state key="normal" title="开始游戏"/>
+                                <connections>
+                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlN-lx-UHX"/>
+                                </connections>
+                            </button>
+                            <label clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="飞机大战" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-3w-ABF">
+                                <rect key="frame" x="204" y="28" width="192" height="56"/>
+                                <fontDescription key="fontDescription" name="DFWaWaSC-W5" family="Wawati SC" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdr-rf-Ekk">
+                                <rect key="frame" x="20" y="28" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86T-Ji-YHg">
+                                <rect key="frame" x="580" y="28" width="0.0" height="0.0"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uhB-SE-eeA" firstAttribute="top" secondItem="lbq-hN-hYJ" secondAttribute="bottom" constant="65" id="2yP-Yu-e10"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bdr-rf-Ekk" secondAttribute="leading" id="5JD-ej-cuv"/>
+                            <constraint firstItem="uhB-SE-eeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FZl-D5-eMZ"/>
+                            <constraint firstItem="lbq-hN-hYJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IUo-qe-FgL"/>
+                            <constraint firstItem="86T-Ji-YHg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="biV-Gu-BlR"/>
+                            <constraint firstItem="5Le-3w-ABF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dF5-kS-gOH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="86T-Ji-YHg" secondAttribute="trailing" id="i16-b3-c5o"/>
+                            <constraint firstItem="5Le-3w-ABF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mR5-Bz-OOh"/>
+                            <constraint firstItem="Bdr-rf-Ekk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oV9-In-5Ky"/>
+                            <constraint firstItem="lbq-hN-hYJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYA-r0-nyP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exitButton" destination="uhB-SE-eeA" id="3dc-P0-y7j"/>
+                        <outlet property="levelLabel" destination="Bdr-rf-Ekk" id="WdK-uR-tEd"/>
+                        <outlet property="scoresLabel" destination="86T-Ji-YHg" id="8EH-8d-cdr"/>
+                        <outlet property="startButton" destination="lbq-hN-hYJ" id="WU0-Gh-d0L"/>
+                        <outlet property="titleLabel" destination="5Le-3w-ABF" id="UUd-Ut-95x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="153"/>
+        </scene>
+    </scenes>
+</document>
